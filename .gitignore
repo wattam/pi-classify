@@ -1,0 +1,5 @@
+# folders at any depth
+node_modules/
+
+# files by name
+*.tgz

@@ -1,0 +1,37 @@
+{
+    "name": "pi-classify",
+    "version": "0.1.0",
+    "description": "Batch OpenRouter classifier questions as a Pi tool.",
+    "type": "module",
+    "license": "0BSD",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Wattam/pi-classify.git"
+    },
+    "keywords": [
+        "pi-package"
+    ],
+    "engines": {
+        "node": ">=22.19.0"
+    },
+    "files": [
+        "index.ts",
+        "renderer.ts",
+        "tool.ts"
+    ],
+    "pi": {
+        "extensions": [
+            "./index.ts"
+        ]
+    },
+    "peerDependencies": {
+        "@earendil-works/pi-ai": "*",
+        "@earendil-works/pi-coding-agent": "*",
+        "@earendil-works/pi-tui": "*",
+        "typebox": "*"
+    },
+    "scripts": {
+        "link:host": "node scripts/link-host.mjs",
+        "test": "node --test test/unit/*.test.ts"
+    }
+}
