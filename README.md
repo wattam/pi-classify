@@ -7,7 +7,7 @@ The extension embeds no API key. It resolves the model through `ctx.modelRegistr
 ## Requirements
 
 - Linux. The tool does not register on other operating systems.
-- Pi 1.6.0 (verified).
+- Pi 1.6.1 (verified).
 - An OpenRouter credential: run `/login openrouter` in Pi.
 
 ## Install
@@ -16,7 +16,7 @@ The extension embeds no API key. It resolves the model through `ctx.modelRegistr
 pi install git:github.com/Wattam/pi-classify
 ```
 
-Pi supplies the host dependencies.
+Pi supplies the host dependencies. Pi 1.6.1 bundles TypeBox 1.3.27. The extension also passes its checks with TypeBox 1.4.7.
 
 ## Configuration
 
